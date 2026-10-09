@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#070a12"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.7)"/>
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.8)"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="750"/>
+    <line x1="600" y1="0" x2="600" y2="750"/>
+    <line x1="900" y1="0" x2="900" y2="750"/>
+  </g>
+
+  <!-- Ambient background glow blobs -->
+  <circle cx="200" cy="200" r="180" fill="#00f2fe" opacity="0.08" filter="blur(60px)"/>
+  <circle cx="1000" cy="550" r="220" fill="#8b5cf6" opacity="0.07" filter="blur(70px)"/>
+
+  <!-- Browser Frame -->
+  <g transform="translate(60, 40)">
+    <!-- Browser Window Card -->
+    <rect width="1080" height="670" rx="16" fill="#0b1120" stroke="url(#borderGrad)" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <rect width="1080" height="48" rx="16" fill="#131b2e"/>
+    <rect y="32" width="1080" height="16" fill="#131b2e"/>
+    <line x1="0" y1="48" x2="1080" y2="48" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Window Controls -->
+    <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="24" r="6" fill="#eab308"/>
+    <circle cx="68" cy="24" r="6" fill="#22c55e"/>
+    
+    <!-- Browser Address Bar -->
+    <rect x="240" y="10" width="600" height="28" rx="8" fill="#090d16" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="260" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">🔒 https://<tspan fill="#38bdf8">careerhub-yash.onrender.com</tspan></text>
+    
+    <!-- Live Badge in Header -->
+    <rect x="940" y="12" width="110" height="24" rx="12" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="1"/>
+    <circle cx="956" cy="24" r="3.5" fill="#22c55e"/>
+    <text x="968" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#4ade80">LIVE DEPLOY</text>
+
+    <!-- Page Nav -->
+    <g transform="translate(40, 70)">
+      <!-- Brand Logo -->
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="url(#accentGrad)"/>
+      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold" fill="#07090e" text-anchor="middle">CH</text>
+      <text x="48" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="800" fill="#f8fafc">Career<tspan fill="#00f2fe">Hub</tspan></text>
+      
+      <!-- Nav Links -->
+      <text x="320" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#cbd5e1" font-weight="500">Find Jobs</text>
+      <text x="420" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#64748b">Browse Roles</text>
+      <text x="530" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#64748b">Companies</text>
+      <text x="640" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#64748b">Dashboard</text>
+
+      <!-- Auth Buttons -->
+      <rect x="860" y="2" width="60" height="30" rx="6" fill="transparent"/>
+      <text x="890" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Log In</text>
+      
+      <rect x="930" y="2" width="90" height="30" rx="6" fill="#00f2fe"/>
+      <text x="975" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#090d16" text-anchor="middle">Post a Job</text>
+    </g>
+
+    <!-- Hero / Headline Area -->
+    <g transform="translate(40, 130)">
+      <rect x="0" y="0" width="1000" height="150" rx="12" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      
+      <rect x="30" y="24" width="160" height="22" rx="11" fill="rgba(0,242,254,0.1)" stroke="#00f2fe" stroke-width="0.8"/>
+      <text x="40" y="39" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#00f2fe">✦ FULL STACK PLATFORM</text>
+      
+      <text x="30" y="80" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" fill="#ffffff">Connecting Talent with Modern Careers</text>
+      <text x="30" y="108" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">Interactive job browsing, role-based workflows, dynamic application tracking &amp; employer portals.</text>
+      
+      <!-- Tech Stack pills in hero -->
+      <g transform="translate(680, 24)">
+        <rect x="0" y="0" width="85" height="26" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+        <text x="42" y="17" font-family="monospace" font-size="11" fill="#38bdf8" text-anchor="middle">Python</text>
+        
+        <rect x="95" y="0" width="85" height="26" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+        <text x="137" y="17" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">Django</text>
+        
+        <rect x="190" y="0" width="95" height="26" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+        <text x="237" y="17" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">PostgreSQL</text>
+      </g>
+    </g>
+
+    <!-- Search Bar in Hero -->
+    <g transform="translate(40, 295)">
+      <rect width="1000" height="54" rx="10" fill="#070a12" stroke="rgba(0,242,254,0.3)" stroke-width="1.5"/>
+      <text x="30" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#64748b">🔍 Search by role (e.g. Full Stack Developer, Django, Python)...</text>
+      <line x1="680" y1="12" x2="680" y2="42" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="700" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#64748b">📍 Remote / India</text>
+      <rect x="880" y="8" width="110" height="38" rx="8" fill="url(#accentGrad)"/>
+      <text x="935" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#07090e" text-anchor="middle">Search Jobs</text>
+    </g>
+
+    <!-- Job Cards Listing Preview -->
+    <g transform="translate(40, 370)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="485" height="220" rx="12" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <rect x="20" y="20" width="46" height="46" rx="10" fill="#1e293b" stroke="rgba(0,242,254,0.4)" stroke-width="1"/>
+      <text x="43" y="48" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">&lt;/&gt;</text>
+      
+      <text x="80" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Full Stack Python Developer</text>
+      <text x="80" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">TechNova Solutions • Remote</text>
+      
+      <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" width="440">
+        Build high-performance web applications using Django, REST APIs, and modern responsive frontends.
+      </text>
+
+      <!-- Badges -->
+      <rect x="20" y="130" width="70" height="24" rx="4" fill="rgba(56,189,248,0.12)"/>
+      <text x="55" y="146" font-family="monospace" font-size="11" fill="#38bdf8" text-anchor="middle">Django</text>
+
+      <rect x="100" y="130" width="70" height="24" rx="4" fill="rgba(168,85,247,0.12)"/>
+      <text x="135" y="146" font-family="monospace" font-size="11" fill="#c084fc" text-anchor="middle">Python</text>
+
+      <rect x="180" y="130" width="85" height="24" rx="4" fill="rgba(34,197,94,0.12)"/>
+      <text x="222" y="146" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">Full-Time</text>
+
+      <line x1="20" y1="172" x2="465" y2="172" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="20" y="196" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#64748b">Applied by 18 candidates</text>
+      <rect x="375" y="178" width="90" height="28" rx="6" fill="#00f2fe"/>
+      <text x="420" y="196" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#0b1120" text-anchor="middle">Apply Now</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(515, 0)">
+        <rect x="0" y="0" width="485" height="220" rx="12" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <rect x="20" y="20" width="46" height="46" rx="10" fill="#1e293b" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+        <text x="43" y="48" font-family="monospace" font-size="18" fill="#a855f7" text-anchor="middle">{;}</text>
+        
+        <text x="80" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Backend API Engineer</text>
+        <text x="80" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">CloudScale Systems • Hybrid</text>
+        
+        <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" width="440">
+          Design resilient relational schema, implement Django authentication, and deploy scalable endpoints.
+        </text>
+
+        <!-- Badges -->
+        <rect x="20" y="130" width="80" height="24" rx="4" fill="rgba(250,204,21,0.12)"/>
+        <text x="60" y="146" font-family="monospace" font-size="11" fill="#facc15" text-anchor="middle">REST API</text>
+
+        <rect x="110" y="130" width="90" height="24" rx="4" fill="rgba(99,102,241,0.12)"/>
+        <text x="155" y="146" font-family="monospace" font-size="11" fill="#818cf8" text-anchor="middle">PostgreSQL</text>
+
+        <rect x="210" y="130" width="75" height="24" rx="4" fill="rgba(34,197,94,0.12)"/>
+        <text x="247" y="146" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">Verified</text>
+
+        <line x1="20" y1="172" x2="465" y2="172" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <text x="20" y="196" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#64748b">Actively interviewing</text>
+        <rect x="375" y="178" width="90" height="28" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="420" y="196" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">View Role</text>
+      </g>
+    </g>
+  </g>
+</svg>

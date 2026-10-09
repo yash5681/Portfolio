@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e"/>
+      <stop offset="50%" stop-color="#0b101d"/>
+      <stop offset="100%" stop-color="#121829"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- Cyber grid -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/>
+    <line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Glowing orbs -->
+  <circle cx="180" cy="180" r="160" fill="#00f2fe" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="1020" cy="450" r="180" fill="#8b5cf6" opacity="0.12" filter="blur(60px)"/>
+
+  <!-- Content Box -->
+  <g transform="translate(100, 100)">
+    <!-- Status Badge -->
+    <rect x="0" y="0" width="340" height="38" rx="19" fill="rgba(16,185,129,0.12)" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="22" cy="19" r="5" fill="#10b981"/>
+    <text x="38" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#34d399">OPEN TO FULL STACK OPPORTUNITIES</text>
+
+    <!-- Name & Title -->
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="-1">Prajapati Yash Arunbhai</text>
+    <text x="0" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="700" fill="url(#textGrad)">Full Stack Developer</text>
+    
+    <text x="0" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#94a3b8">
+      Building modern, scalable &amp; user-centric web applications using Python, Django, JavaScript &amp; Cloud.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 280)">
+      <rect x="0" y="0" width="110" height="38" rx="8" fill="#1e293b" stroke="rgba(0,242,254,0.3)"/>
+      <text x="55" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">Python</text>
+
+      <rect x="125" y="0" width="110" height="38" rx="8" fill="#1e293b" stroke="rgba(34,197,94,0.3)"/>
+      <text x="180" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Django</text>
+
+      <rect x="250" y="0" width="130" height="38" rx="8" fill="#1e293b" stroke="rgba(250,204,21,0.3)"/>
+      <text x="315" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#facc15" text-anchor="middle">JavaScript</text>
+
+      <rect x="395" y="0" width="130" height="38" rx="8" fill="#1e293b" stroke="rgba(168,85,247,0.3)"/>
+      <text x="460" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#c084fc" text-anchor="middle">PostgreSQL</text>
+
+      <rect x="540" y="0" width="110" height="38" rx="8" fill="#1e293b" stroke="rgba(56,189,248,0.3)"/>
+      <text x="595" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">REST API</text>
+
+      <rect x="665" y="0" width="100" height="38" rx="8" fill="#1e293b" stroke="rgba(244,63,94,0.3)"/>
+      <text x="715" y="24" font-family="monospace" font-size="14" font-weight="bold" fill="#fb7185" text-anchor="middle">Render</text>
+    </g>
+
+    <!-- Footer Meta -->
+    <g transform="translate(0, 370)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#64748b">📍 Himmatnagar, Gujarat, India</text>
+      <text x="300" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#64748b">✉️ pyash7571@gmail.com</text>
+      <text x="600" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#64748b">📞 +91 9023433407</text>
+    </g>
+  </g>
+</svg>

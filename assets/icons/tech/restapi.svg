@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0f172a" stroke="#00f2fe" stroke-width="4" stroke-opacity="0.3"/>
+  <!-- Central API Node and connected points -->
+  <circle cx="64" cy="64" r="16" fill="url(#apiGrad)"/>
+  <circle cx="28" cy="40" r="10" fill="#38bdf8"/>
+  <circle cx="28" cy="88" r="10" fill="#818cf8"/>
+  <circle cx="100" cy="40" r="10" fill="#a78bfa"/>
+  <circle cx="100" cy="88" r="10" fill="#34d399"/>
+  <!-- Connecting lines -->
+  <line x1="64" y1="64" x2="28" y2="40" stroke="#00f2fe" stroke-width="4" stroke-dasharray="4 4"/>
+  <line x1="64" y1="64" x2="28" y2="88" stroke="#818cf8" stroke-width="4" stroke-dasharray="4 4"/>
+  <line x1="64" y1="64" x2="100" y2="40" stroke="#a78bfa" stroke-width="4" stroke-dasharray="4 4"/>
+  <line x1="64" y1="64" x2="100" y2="88" stroke="#34d399" stroke-width="4" stroke-dasharray="4 4"/>
+  <!-- Label inside center -->
+  <text x="64" y="69" text-anchor="middle" font-family="monospace" font-size="11" font-weight="900" fill="#07090e">API</text>
+</svg>

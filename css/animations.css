@@ -1,0 +1,116 @@
+/**
+ * ====================================================================
+ * KEYFRAMES & ANIMATION UTILITIES
+ * High performance, subtle & elegant transitions
+ * ====================================================================
+ */
+
+/* Glowing pulse for status indicator */
+@keyframes statusPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.pulse-indicator {
+  animation: statusPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Subtle gentle floating animation */
+@keyframes floatSubtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatSubtle 4.5s ease-in-out infinite;
+}
+
+/* Terminal blink cursor */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background-color: var(--accent-cyan);
+  vertical-align: middle;
+  margin-left: 4px;
+  animation: cursorBlink 0.9s infinite;
+}
+
+/* Modal Fade-In */
+@keyframes modalBackdropFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalContentPop {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-enter {
+  animation: modalBackdropFade 0.2s ease forwards;
+}
+
+.modal-content-enter {
+  animation: modalContentPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Toast Notification Slide */
+@keyframes toastSlideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast-slide {
+  animation: toastSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Safe reveal: default to fully visible so NO content is ever hidden */
+.reveal-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .pulse-indicator {
+    animation: none !important;
+  }
+}

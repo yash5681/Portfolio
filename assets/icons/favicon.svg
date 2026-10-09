@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background hexagon -->
+  <rect width="100" height="100" rx="24" fill="#07090e" stroke="url(#favGrad)" stroke-width="3" />
+  <!-- Hexagonal / Tech badge outline -->
+  <polygon points="50,15 82,32 82,68 50,85 18,68 18,32" fill="none" stroke="#00f2fe" stroke-width="2" stroke-opacity="0.4" />
+  <!-- Code brackets & Y symbol -->
+  <path d="M30 42 L22 50 L30 58" fill="none" stroke="#00f2fe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M70 42 L78 50 L70 58" fill="none" stroke="#a855f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Letter Y monogram -->
+  <path d="M40 36 L50 50 L50 66 M60 36 L50 50" fill="none" stroke="url(#favGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  <!-- Tech dot -->
+  <circle cx="50" cy="72" r="2.5" fill="#00f2fe" />
+</svg>
