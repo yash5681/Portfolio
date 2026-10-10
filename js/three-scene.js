@@ -191,17 +191,31 @@
     particleSystem = new THREE.Points(pGeo, pMat);
     coreGroup.add(particleSystem);
 
-    // Smooth, Contained Mouse Tracking on the Card
+    // Smooth, Contained Mouse & Touch Tracking on the Card
     container.addEventListener('mousemove', (e) => {
       const rect = container.getBoundingClientRect();
       mouseX = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       mouseY = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
     });
 
+    container.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches.length > 0) {
+        const rect = container.getBoundingClientRect();
+        const touch = e.touches[0];
+        mouseX = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+        mouseY = -(((touch.clientY - rect.top) / rect.height) * 2 - 1);
+      }
+    }, { passive: true });
+
     container.addEventListener('mouseleave', () => {
       mouseX = 0;
       mouseY = 0;
     });
+
+    container.addEventListener('touchend', () => {
+      mouseX = 0;
+      mouseY = 0;
+    }, { passive: true });
 
     window.addEventListener('resize', onResize);
 
